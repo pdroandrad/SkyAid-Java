@@ -1,8 +1,5 @@
-# Etapa de build
-FROM ubuntu:latest AS build
-
-# Instala Maven e JDK
-RUN apt-get update && apt-get install -y openjdk-17-jdk maven && apt-get clean
+# Build com Maven + JDK 21
+FROM maven:3.9.4-eclipse-temurin-21 AS build
 
 WORKDIR /app
 
@@ -11,14 +8,12 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-# Etapa final
-FROM openjdk:17-jdk-slim
+# Runtime JDK 21 slim
+FROM eclipse-temurin:21-jdk-jammy
 
+EXPOSE 8080
 WORKDIR /app
 
 COPY --from=build /app/target/SkyAid-0.0.1-SNAPSHOT.jar app.jar
 
-EXPOSE 8080
-
-# Se precisar de argumentos para a JVM, use JAVA_OPTS
 ENTRYPOINT ["java", "-jar", "app.jar"]
