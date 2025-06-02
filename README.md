@@ -154,9 +154,6 @@ Acesse a documentação Swagger em: `http://localhost:8080/swagger-ui/index.html
 }
 ```
 
-### 5. Visualização dos objetos criados, no navegador
+### 6. Deploy na nuvem
 
-![image](https://github.com/user-attachments/assets/90dd76bc-f17f-475f-aa29-28c800641649)
-![image](https://github.com/user-attachments/assets/7072675f-323e-433f-b5cb-a94c0552deeb)
-![image](https://github.com/user-attachments/assets/ccb1e0e5-ee9f-4a77-9dac-8b40683317d1)
-![image](https://github.com/user-attachments/assets/21b21007-d477-4851-b84d-4d93aa6a9b09)
+Fizemos o deploy na nuvem através do [render.com](https://render.com/) onde a API pode ser acessar através do link (https://skyaid-java.onrender.com/api/) + endpoint da entidade a ser acessada (drones, operadores, missoes ou sensores).
