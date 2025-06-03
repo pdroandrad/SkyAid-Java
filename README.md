@@ -104,8 +104,8 @@ Executar o seguinte comando no terminal:
 ```
 ./mvnw spring-boot:run
 ```
-A aplicação estará disponível em: `http://localhost:8080`
-Acesse a documentação Swagger em: `http://localhost:8080/swagger-ui/index.html`
+A aplicação estará disponível em: `http://localhost:8080`.
+Acesse a documentação Swagger em: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
 ### 5. Exemplos json para testes de endpoints
 
@@ -156,4 +156,4 @@ Acesse a documentação Swagger em: `http://localhost:8080/swagger-ui/index.html
 
 ### 6. Deploy na nuvem
 
-Fizemos o deploy na nuvem através do [render.com](https://render.com/) onde a API pode ser acessar através do link (https://skyaid-java.onrender.com/api/) + endpoint da entidade a ser acessada (drones, operadores, missoes ou sensores).
+Fizemos o deploy na nuvem através do `render.com` onde a API pode ser acessar através do link [https://skyaid-java.onrender.com/api/](https://skyaid-java.onrender.com/api/) + endpoint da entidade a ser acessada (`drones`, `operadores`, `missoes` ou `sensores`).
